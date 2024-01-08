@@ -1,0 +1,123 @@
+body {
+    /*--Michigan-blue: #00274C;
+    --Michigan-maize: #FFCB05;*/
+    --NFL-blue: #013369;
+    --NFL-red: #D50A0A;
+    --NFL-dark-grey: #1F1F1F;
+    --NFL-white: #FAFAFA;
+    --body-white: #EDECEC;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    background: var(--NFL-blue);
+}
+.body-container {
+    margin: 10px auto;
+    background: var(--body-white);
+    width: fit-content;
+    padding: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.image-container {
+    left: 0;
+    margin: auto;
+    right: 0;
+    text-align: center;
+    width: 100%;
+}
+.image-container img {
+    max-width: 100%;
+}
+h2 {
+    margin: 10px;
+}
+a {
+    color: #024794;
+    text-decoration: underline;
+    transition: color .2s ease-in-out;
+}
+a:hover {
+    color: #777;
+}
+p {
+    margin-left: auto;
+    margin-right: auto;
+}
+button {
+    font-size: 1em;
+    width: 100%;
+    padding: 0px 5px;
+    &.pick-correct-True, &.pick-correct-False, &.pick-pending {
+        border: 0px;
+    }
+}
+
+.navigation-buttons-container {
+    margin-bottom: 0.5em;
+}
+.navigation-buttons-container button {
+    width: auto;
+    height: 2em;
+}
+
+.weeks-container {
+    display: flex;
+    overflow-x: auto;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+.pick-correct-True {
+    box-shadow: inset 0px 0px 0px 3px green;
+}
+.pick-correct-False {
+    box-shadow: inset 0px 0px 0px 3px red;
+}
+.pick-pending {
+    box-shadow: inset 0px 0px 0px 3px blue;
+}
+.game-winner {
+    background: #A8E88B;
+}
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:hover {background-color: #ddd;}
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--NFL-blue);
+    color: var(--NFL-white);
+}
+.week-header {
+    text-align: center;
+}
+
+#week {
+    font-size: 1em;
+    height: 2em;
+}
+
+img.team_logo {
+    width: 50px;
+    vertical-align: middle;
+}
+
+footer {
+    color: var(--body-white);
+}
+footer a {
+    color: var(--body-white);
+}
